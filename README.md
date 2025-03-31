@@ -1,19 +1,18 @@
 # Stock-price
 Stock Market Prediction using LSTM, GRU, and Sentiment Analysis
 
-**Overview**
+# Overview
 
 This project focuses on predicting stock prices using machine learning models, specifically GRU and LSTM, while incorporating sentiment analysis from financial news. The dataset includes historical stock prices of Apple (AAPL) and Tesla (TSLA), along with technical indicators and sentiment scores extracted from Apple-related news.
 
-Features & Methodology
 
-Data Collection:
+# Data Collection:
 
 Historical stock prices for Apple (AAPL) and Tesla (TSLA).
 
-Apple-related financial news.
+Apple and tesla related financial news.
 
-Feature Engineering:
+# Feature Engineering:
 
 Technical indicators added to stock data:
 
@@ -23,17 +22,17 @@ Relative Strength Index (RSI)
 
 Volatility_10 (10-day rolling standard deviation)
 
-Sentiment Analysis:
+# Sentiment Analysis:
 
 Extracted sentiment scores from Apple news using FinBERT.
 
-Preprocessing:
+# Preprocessing:
 
 Applied Robust Scaling to normalize the data.
 
 Combined stock market features with sentiment scores.
 
-Model Training & Testing:
+# Model Training & Testing:
 
 Training & Validation Data: Apple stock data
 
@@ -43,13 +42,13 @@ Implemented GRU and LSTM models.
 
 GRU performed better than LSTM on this dataset.
 
-Adversarial Training:
+# Adversarial Training:
 
 Applied Projected Gradient Descent (PGD) adversarial training.
 
 Adversarial training weakened GRU performance instead of improving it.
 
-Results
+# Results
 
 GRU outperformed LSTM on the test data.
 
