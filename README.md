@@ -16,12 +16,14 @@ Apple and tesla related financial news.
 
 Technical indicators added to stock data:
 
-Exponential Moving Average (EMA_100)
+1. Exponential Moving Average (EMA_100)
 
-Relative Strength Index (RSI)
+2. Relative Strength Index (RSI)
 
-Volatility_10 (10-day rolling standard deviation)
-
+3. Volatility_10 (10-day rolling standard deviation)
+   
+4. Daily Return
+  
 # Sentiment Analysis
 
 Extracted sentiment scores from Apple news using FinBERT.
@@ -34,9 +36,9 @@ Combined stock market features with sentiment scores.
 
 # Model Training & Testing
 
-Training & Validation Data: Apple stock data
+1. Training & Validation Data: Apple stock data
 
-Testing Data: Tesla stock data
+2. Testing Data: Tesla stock data
 
 Implemented GRU and LSTM models.
 
@@ -51,5 +53,4 @@ Adversarial training weakened GRU performance instead of improving it.
 # Results
 
 GRU outperformed LSTM on the test data.
-
 PGD adversarial training did not improve model performance, making the GRU model weaker.
