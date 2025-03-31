@@ -1,5 +1,5 @@
 # Stock-price
-Stock Market Prediction using LSTM, GRU, and Sentiment Analysis using FINBERT. Applly PGD adversinal training
+Stock Market Prediction using LSTM, GRU, and Sentiment Analysis using FINBERT. Apply PGD adversinal training
 
 # Overview
 
