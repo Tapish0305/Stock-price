@@ -42,8 +42,6 @@ Combined stock market features with sentiment scores.
 
 Implemented GRU and LSTM models.
 
-GRU performed better than LSTM on this dataset.
-
 # Adversarial Training
 
 Applied Projected Gradient Descent (PGD) adversarial training.
