@@ -1,54 +1,35 @@
-# Stock-price prediction
-Stock Market Prediction using LSTM, GRU, and Sentiment Analysis using FINBERT. Apply PGD adversinal training.
+# Stock Price Prediction Using GRU and LSTM
 
-# Overview
+## Overview
+This project focuses on stock price prediction using deep learning models, specifically GRU and LSTM. It integrates two datasets: stock price data and financial news data. Sentiment analysis is performed on financial news using FinBERT, and the extracted sentiment scores are combined with stock price features to improve prediction accuracy.
 
-This project focuses on predicting stock prices using machine learning models, specifically GRU and LSTM, while incorporating sentiment analysis from financial news. The dataset includes historical stock prices of Apple (AAPL) and Tesla (TSLA), along with technical indicators and sentiment scores extracted from Apple-related news.
+## Features and Methodology
+- **Datasets Used**:
+  - Stock price data (historical prices)
+  - Financial news data
+- **Feature Engineering**:
+  - Extracted sentiment scores from financial news using **FinBERT**
+  - Added technical indicators: **Daily Return, EMA_100, RSI, Volatility_10**
+  - Standardized data using **Robust Scaling**
+- **Model Training**:
+  - Implemented **GRU** and **LSTM** models
+  - Combined stock price and sentiment data for training
+  - Performance Metrics:
+    - **GRU**: Train Loss - **0.1948**, Validation Loss - **0.24**, Test Loss - **0.35**
+    - **LSTM**: Train Loss - **0.1933**, Validation Loss - **0.30**, Test Loss - **0.35**
+- **Adversarial Training**:
+  - Applied **Projected Gradient Descent (PGD)** adversarial training on a stacked GRU model
+  - Found that adversarial training weakened performance compared to the standard GRU
 
 
-# Data Collection
+## Results & Insights
+- The **GRU** model outperformed **LSTM** in validation loss.
+- Adversarial training using PGD did not improve the performance of the GRU model.
+- Sentiment analysis using **FinBERT** contributed additional predictive power.
+- Adding technical indicators improved overall model accuracy.
 
-Historical stock prices for Apple (AAPL) and Tesla (TSLA).
 
-Apple and tesla related financial news.
 
-# Feature Engineering
+--------------------------------------------------------------------------
+If you find this project useful, don't forget to ⭐ the repo!
 
-Technical indicators added to stock data:
-
-1. Exponential Moving Average (EMA_100)
-
-2. Relative Strength Index (RSI)
-
-3. Volatility_10 (10-day rolling standard deviation)
-   
-4. Daily Return
-  
-# Sentiment Analysis
-
-Extracted sentiment scores from Apple news using FinBERT.
-
-# Preprocessing
-
-Applied Robust Scaling to normalize the data.
-
-Combined stock market features with sentiment scores.
-
-# Model Training & Testing
-
-1. Training & Validation Data: Apple stock data
-
-2. Testing Data: Tesla stock data
-
-Implemented GRU and LSTM models.
-
-# Adversarial Training
-
-Applied Projected Gradient Descent (PGD) adversarial training.
-
-Adversarial training weakened GRU performance instead of improving it.
-
-# Results
-
-GRU outperformed LSTM on the test data.
-PGD adversarial training did not improve model performance, making the GRU model weaker.
